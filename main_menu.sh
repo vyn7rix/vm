@@ -83,7 +83,7 @@ while true; do
         6)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
-            curl -fsSL https://raw.githubusercontent.com/Sagargamin/INSTALLER-REPO/main/rdp_installer.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/vyn7rix/vm/main/rdp_installer.sh | sed 's/\r$//' | bash
             pause
             ;;
         7)
