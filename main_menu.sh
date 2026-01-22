@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==========================================
-#   🚀 SAGAR GAMING 2X - ALL IN ONE TOOL
+#   🚀 VYNTRIX - ALL IN ONE TOOL
 # ==========================================
 
 set -u
@@ -23,7 +23,7 @@ header() {
     echo -e "${B} | |  | | (_| | | | | | | |  | |  __/ | | | |_| |${N}"
     echo -e "${B} |_|  |_|\__,_|_|_| |_| |_|  |_|\___|_| |_|\__,_|${N}"
     echo -e "${B}=====================================================${N}"
-    echo -e "${Y}      🚀 Subscribe To Sagar Gaming 2X      ${N}"
+    echo -e "${Y}      🚀 Subscribe To VYNTRIX_PLAYZ      ${N}"
     echo -e "${B}=====================================================${N}"
     echo ""
 }
@@ -41,12 +41,10 @@ while true; do
     echo -e "${C} 2) ${W}Bot Maker ${G}(Create app.js)${N}"
     echo -e "${C} 3) ${W}Auto Restarter Setup ${G}(Systemd Service)${N}"
     echo -e "${C} 4) ${W}Bot Remover ${G}(Manager)${N}"
-    echo -e "${C} 5) ${W}Discord Server Link${N}"
-    echo -e "${C} 6) ${W}YouTube Channel Link${N}"
-    echo -e "${C} 7) ${W}VM Installer ${G}(IDX VPS)${N}"
-    echo -e "${C} 8) ${W}RDP Installer ${G}(Desktop Environment)${N}"
-    echo -e "${C} 9) ${W}Tailscale Installer ${G}(VPN)${N}"
-    echo -e "${R} 10) Exit${N}"
+    echo -e "${C} 5) ${W}VM Installer ${G}(IDX VPS)${N}"
+    echo -e "${C} 6) ${W}RDP Installer ${G}(Desktop Environment)${N}"
+    echo -e "${C} 7) ${W}Tailscale Installer ${G}(VPN)${N}"
+    echo -e "${R} 8) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
     read -p "${Y}👉 Select an option [1-10]: ${N}" choice
@@ -78,37 +76,23 @@ while true; do
             ;;
         5)
             echo ""
-            echo -e "${B}📢 Join our Discord Server:${N}"
-            echo -e "${G}🔗 https://discord.gg/ZAAyrb4J6s${N}"
-            echo ""
-            pause
-            ;;
-        6)
-            echo ""
-            echo -e "${R}📺 Subscribe to YouTube:${N}"
-            echo -e "${Y}🔗 https://www.youtube.com/@OfficialNotGamerPie${N}"
-            echo ""
-            pause
-            ;;
-        7)
-            echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/NotGamerPiie/idx-vps/main/vps.sh)
             pause
             ;;
-        8)
+        6)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
             curl -fsSL https://raw.githubusercontent.com/Sagargamin/INSTALLER-REPO/main/rdp_installer.sh | sed 's/\r$//' | bash
             pause
             ;;
-        9)
+        7)
             echo ""
             echo -e "${Y}🌐 Installing Tailscale VPN...${N}"
             curl -fsSL https://tailscale.com/install.sh | sh
             pause
             ;;
-        10)
+        8)
             echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
